@@ -53,16 +53,17 @@ public class PropertiesParser {
 		JOptionPane.showInputDialog(paser.getInfoFromConfiguration(JDBC));
 	}
 	
-	@SuppressWarnings("unused")
 	private static void newMethod() throws ConfigurationException {
 		PropertiesConfiguration config = new PropertiesConfiguration(CONFIG_PROPERTIES);
-		//TODO Automatic Reloading : A common issue with properties file is to handle the reloading of the file when it changes. 
+		//Automatic Reloading : A common issue with properties file is to handle the reloading of the file when it changes. 
 		config.setReloadingStrategy(new FileChangedReloadingStrategy());
 		JOptionPane.showInputDialog(config.getProperty(JDBC));
 		JOptionPane.showInputDialog(config.getProperty(JDBC));
 	}
 
 	public static void main(String[] args) throws ConfigurationException, IOException  {
+		oldMethod();
+		JOptionPane.showInputDialog("New World");
 		newMethod();
 	}
 }

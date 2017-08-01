@@ -1,4 +1,4 @@
 # PropertiesParser
-my customzied PropertiesParser
+My customzied PropertiesParser
 
-i want to implement PropertiesParser to comparable with apache common's PropertiesConfiguration
+I want to implement a PropertiesParser which be comparable with apache common's PropertiesConfiguration
